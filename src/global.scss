@@ -1,0 +1,104 @@
+// Imports
+@import './assets/scss/colors.scss';
+@import './assets/scss/flex.scss';
+
+// Reset
+#app {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  color: $default;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+body {
+  height: 100vh;
+  background: $secundary;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a,
+img {
+  outline: none;
+}
+
+a {
+  color: $primary;
+  text-decoration: none;
+  transition: 0.2s;
+
+  &:hover {
+    color: $primary-shade;
+  }
+}
+
+// Global Classes
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+// Card
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  word-wrap: break-word;
+  border: .0625rem solid rgba(0,0,0,.05);
+  border-radius: .25rem;
+  background-color: #fff;
+  background-clip: border-box;
+  box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07)!important;
+  
+  &-header:not(:empty),
+  &-content:not(:empty) {
+    padding: 16px;
+  }
+}
+
+.shadow {
+  box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07)!important;
+}
+
+// Font
+
+.f-light {
+  font-weight: 300;
+}
