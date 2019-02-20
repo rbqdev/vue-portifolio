@@ -62,7 +62,9 @@
 }
 
 .nav-link {
-  margin: 0 8px;
+  margin: 0 12px;
+  display: flex;
+  align-items: center;
 
   &:first-child {
     margin-left: 0;
@@ -81,7 +83,7 @@
 
     &:hover,
     &.router-link-exact-active {
-      color: #fff;
+      color: #fff !important;
     }
   }
 
@@ -92,8 +94,12 @@
   }
 
   &-home {
-    a:before {
-      content: "</> Robson Braga";
+    a {
+      font-size: 1.2em;
+
+      &:before {
+        content: "</> Robson Braga";
+      }
     }
   }
 }

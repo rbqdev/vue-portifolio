@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <div class="overlay-bg">
+      <div class="lines-bg"></div>
       <div class="separator separator-bottom separator-skew">
         <svg
           x="0"
@@ -23,12 +24,12 @@
   </div>
 </template>
 <script>
-import Header from './layouts/Header.vue';
+import Header from "./layouts/Header.vue";
 
 export default {
   components: {
-    Header,
-  },
+    Header
+  }
 };
 </script>
 
@@ -36,13 +37,23 @@ export default {
 @import "./global.scss";
 
 .overlay-bg {
-  background: linear-gradient(87deg, #172b4d 0, #1a174d 100%) !important;
+  background: linear-gradient(87deg, #172b4d 0, #1a174d 100%);
   width: 100%;
-  height: 50vh;
+  height: 55vh;
   min-height: 250px;
-  max-height: 400px;
+  max-height: 535px;
   position: absolute;
   z-index: -1;
+
+  .lines-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("./assets/img/line-bg.png");
+    background-position: center center;
+    background-size: cover;
+    opacity: 0.2;
+  }
 
   .separator {
     fill: $secundary;
