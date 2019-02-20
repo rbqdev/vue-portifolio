@@ -1,4 +1,4 @@
-/** Colors **/
+/** Variables Colors **/
 $default: #172b4d;
 $primary: #5e72e4;
 $primary-shade: #233dd2;
@@ -7,3 +7,14 @@ $info: #11cdef;
 $success: #2dce89;
 $danger: #f5365c;
 $warning: #fb6340;
+
+$objectColors: (
+  default: $default,
+  primary: $primary,
+  primary-shade: $primary-shade,
+  secundary: $secundary,
+  info: $info,
+  success: $success,
+  danger: $danger,
+  warning: $warning
+);
