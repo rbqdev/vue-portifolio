@@ -18,9 +18,6 @@
         <li class="nav-link">
           <router-link to="/portifolio">Potifólio</router-link>
         </li>
-        <li class="nav-link">
-          <router-link to="/contato">Contato</router-link>
-        </li>
         <li class="nav-link nav-link-social">
           <a href="#0" target="_blank" rel="noopener">
             <ion-icon name="logo-github"></ion-icon>
