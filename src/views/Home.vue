@@ -4,7 +4,8 @@
       <div class="card card-profile shadow">
         <div class="card-header flex">
           <div class="avatar flex">
-            <img src="../assets/img/avatar.jpg" class="shadow" alt="Avatar">
+            <!-- <img src="../assets/img/avatar.jpg" class="image shadow" alt="Avatar"> -->
+            <ion-icon name="person" class="image"></ion-icon>
           </div>
         </div>
         <!-- card-header -->
@@ -15,25 +16,23 @@
           </div>
           <div class="card-content__info professional-info">
             <h3 class="work">
-              Desenvolvedor Frontend na
+              Frontend Developer at
               <a
-                href="http://way2.com.br/"
+                href="#0"
                 class="company"
                 target="_blank"
                 rel="noopener"
-              >Way2 Tecnologia</a>
+              >Company Name</a>
             </h3>
-            <h4 class="education text-light">
-              Graduado em
-              <strong class="course text-regular">Sistemas de Informação</strong> pela
-              <strong class="school text-regular">Faculdade de Tecnologia e Ciências</strong>
-            </h4>
+            <h4
+              class="education"
+            >Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>
           </div>
         </div>
         <!-- card-content -->
         <div class="card-footer">
-          <p>Sou Desenvolvedor desde 2012. Meus objetivos profissionais se resumem a ser um programador de excelência, prezando pela qualidade do produto, do código, do trabalho em equipe, e estar sempre buscando um novo aprendizado.</p>
-          <router-link to="/portifolio" class="btn btn-default">Ver meu potifólio</router-link>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          <router-link to="/portifolio" class="btn btn-default">Ver Portifólio</router-link>
         </div>
         <!-- card-footer -->
       </div>
@@ -52,10 +51,10 @@ export default {
 @import "../assets/scss/colors";
 
 .card-profile {
-  margin-top: 100px;
   min-height: 400px;
 
   .card-header {
+    padding-top: 40px;
     min-height: 60px;
     justify-content: center;
 
@@ -63,20 +62,19 @@ export default {
       position: relative;
       width: 100%;
 
-      img {
-        position: absolute;
-        top: calc(50% - -10px);
-        left: 50%;
-        width: 180px;
-        height: 180px;
+      .image {
+        width: 120px;
+        height: 120px;
+        margin: 0 auto;
         border-radius: 100%;
-        border: 2px solid $default;
-        transform: translate(-50%, -50%);
+        border: 2px solid #172b4d;
+        padding: 15px;
+        visibility: visible;
       }
     }
   }
   .card-content {
-    padding: 85px 25px 0;
+    padding: 25px;
     text-align: center;
 
     &__info {
@@ -102,12 +100,23 @@ export default {
 
 .card-footer {
   border-top: 1px solid #eee;
-  margin-top: 35px;
+  margin-top: 15px;
   padding: 35px 25px;
   text-align: center;
 
   .btn {
     margin: 35px 0 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .content-home {
+    .container {
+      padding: 0;
+    }
+    .card {
+      border-radius: 0;
+    }
   }
 }
 </style>

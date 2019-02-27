@@ -60,6 +60,11 @@ export default {
     position: absolute;
     bottom: -6px;
     width: 100%;
+
+    @media only screen and (max-width: 767px) {
+      fill: #fff;
+    }
   }
+
 }
 </style>
