@@ -1,83 +1,65 @@
 <template>
-  <div class="content-home">
-    <div class="container">
-      <div class="card card-profile shadow">
-        <div class="card-header flex">
+  <section class="page home">
+    <CardContent>
+      <template v-slot:header>
+        <div class="card-header__container">
           <div class="avatar flex">
-            <!-- <img src="../assets/img/avatar.jpg" class="image shadow" alt="Avatar"> -->
-            <ion-icon name="person" class="image"></ion-icon>
+            <img src="../assets/img/avatar.jpg" class="image shadow" alt="Avatar">
           </div>
         </div>
-        <!-- card-header -->
-        <div class="card-content">
-          <div class="card-content__info personal-info">
-            <h1 class="title name">Robson Braga de Queiroz</h1>
-            <h2 class="subtitle city text-light">Florianópolis, SC</h2>
-          </div>
-          <div class="card-content__info professional-info">
-            <h3 class="work">
-              Frontend Developer at
-              <a
-                href="#0"
-                class="company"
-                target="_blank"
-                rel="noopener"
-              >Company Name</a>
-            </h3>
-            <h4
-              class="education"
-            >Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>
-          </div>
-        </div>
-        <!-- card-content -->
-        <div class="card-footer">
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-          <router-link to="/portifolio" class="btn btn-default">Ver Portifólio</router-link>
-        </div>
-        <!-- card-footer -->
-      </div>
-    </div>
-  </div>
+      </template>
+      <template v-slot:content>
+        <article class="card-content__info personal-info">
+          <h1 class="title name">Robson Braga de Queiroz</h1>
+          <h2 class="subtitle city text-light">FullStack Developer</h2>
+        </article>
+        <article class="card-content__info professional-info">
+          <h3 class="work">
+            Working on
+            <a
+              href="http://way2.com.br"
+              class="company"
+              target="_blank"
+              rel="noopener"
+            >Way2 Technology</a>
+            as Front End eveloper.
+          </h3>
+          <span>Javascript lover and enthusiast open-source.</span>
+        </article>
+      </template>
+      <template v-slot:footer>
+        <article class="card-footer__content">
+          <p>I am a web developer since 2012. Working as a fullstack, however, with focus in the frontend of aplications. My professional goals are: be a programmer of excellence, maintaining the quality of code, team working, and always seeking new learning.</p>
+          <router-link to="/portifolio" class="btn btn-default">Portifólio</router-link>
+        </article>
+      </template>
+    </CardContent>
+  </section>
 </template>
 
 <script>
+import CardContent from "@/layouts/CardContent.vue";
+
 export default {
   name: "home",
-  components: {}
+  components: {
+    CardContent
+  }
 };
 </script>
 
-<style lang="scss" scoped>
-@import "../assets/scss/colors";
-
-.card-profile {
-  min-height: 400px;
-
-  .card-header {
-    padding-top: 40px;
-    min-height: 60px;
+<style lang="scss">
+.home {
+  .card {
     justify-content: center;
-
-    .avatar {
-      position: relative;
-      width: 100%;
-
-      .image {
-        width: 120px;
-        height: 120px;
-        margin: 0 auto;
-        border-radius: 100%;
-        border: 2px solid #172b4d;
-        padding: 15px;
-        visibility: visible;
-      }
-    }
+    align-items: center;
   }
+
   .card-content {
     padding: 25px;
-    text-align: center;
 
     &__info {
+      text-align: center;
       margin-bottom: 25px;
 
       &:last-child {
@@ -96,26 +78,31 @@ export default {
       margin-bottom: 10px;
     }
   }
-}
 
-.card-footer {
-  border-top: 1px solid #eee;
-  margin-top: 15px;
-  padding: 35px 25px;
-  text-align: center;
+  .card-header__container {
+    width: 100%;
+    justify-content: center;
 
-  .btn {
-    margin: 35px 0 0;
-  }
-}
+    .avatar {
+      position: relative;
+      width: 100%;
 
-@media only screen and (max-width: 767px) {
-  .content-home {
-    .container {
-      padding: 0;
+      .image {
+        margin: 0 auto;
+        border-radius: 10px;
+        border: 2px solid #172b4d;
+      }
     }
-    .card {
-      border-radius: 0;
+  }
+
+  .card-footer__content {
+    margin-top: 15px;
+    padding: 35px 25px;
+    text-align: center;
+    border-top: 1px solid #eee;
+
+    .btn {
+      margin: 35px 0 0;
     }
   }
 }

@@ -8,7 +8,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100vh;
+  padding-bottom: 40px;
   color: $default;
+  overflow: auto;
 }
 
 html {

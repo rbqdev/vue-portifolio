@@ -2,18 +2,6 @@
   <div id="app">
     <div class="overlay-bg">
       <div class="lines-bg"></div>
-      <div class="separator separator-bottom separator-skew">
-        <svg
-          x="0"
-          y="0"
-          viewBox="0 0 1560 100"
-          preserveAspectRatio="none"
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <polygon class="fill-white" points="1560 0 2560 100 0 100"></polygon>
-        </svg>
-      </div>
     </div>
     <div class="header">
       <Header/>
@@ -34,14 +22,13 @@ export default {
 </script>
 
 <style lang="scss">
-@import "./global.scss";
+@import "@assets/scss/global.scss";
 
 .overlay-bg {
   background: linear-gradient(87deg, #172b4d 0, #1a174d 100%);
   width: 100%;
-  height: 55vh;
-  min-height: 250px;
-  max-height: 535px;
+  height: 100vh;
+  min-height: 455px;
   position: absolute;
   z-index: -1;
 
@@ -49,10 +36,9 @@ export default {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("./assets/img/line-bg.png");
+    background-image: url("./assets/img/dots.svg");
     background-position: center center;
-    background-size: cover;
-    opacity: 0.2;
+    opacity: 0.4;
   }
 
   .separator {
@@ -65,6 +51,8 @@ export default {
       fill: #fff;
     }
   }
-
+  @media only screen and (max-width: 767px) {
+    height: 100px;
+  }
 }
 </style>
