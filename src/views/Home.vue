@@ -4,15 +4,14 @@
       <template v-slot:header>
         <div class="card-header__container">
           <div class="avatar flex">
-            <img class="image shadow" v-if="!avatarUrl" src="@/assets/img/avatar.jpg" alt="Personal Image">
-            <img class="image shadow" v-else :src="avatarUrl" alt="Personal Image">
+            <img class="image shadow" src="@/assets/img/avatar.jpg" alt="Personal Image">
           </div>
         </div>
       </template>
       <template v-slot:content>
         <article class="card-content__info personal-info">
-          <h1 class="title name">{{ homeInfo.fullname }}</h1>
-          <h2 class="subtitle city text-light">{{ homeInfo.profession }}</h2>
+          <h1 class="title name">{{ info.fullname }}</h1>
+          <h2 class="subtitle city text-light">{{ info.profession }}</h2>
         </article>
         <article class="card-content__info professional-info">
           <h3 class="work">
@@ -22,14 +21,14 @@
               class="company"
               target="_blank"
               rel="noopener"
-            >{{ homeInfo.company.name }}</a>
-            as {{ homeInfo.company.role }}.
+            >{{ info.company.name }}</a>
+            as {{ info.company.role }}.
           </h3>
         </article>
       </template>
       <template v-slot:footer>
         <article class="card-footer__content">
-          <div class="card-footer__summary" v-html="homeInfo.summary"></div>
+          <div class="card-footer__summary" v-html="info.summary"></div>
           <router-link to="/portifolio" class="btn btn-default">Portifólio</router-link>
         </article>
       </template>
@@ -41,26 +40,28 @@
 import { config } from "@config/config";
 import CardContent from "@/layouts/CardContent.vue";
 
-const {
-  homepage: { info }
-} = config;
-
 export default {
   name: "home",
   components: {
     CardContent
   },
-  computed: {
-    homeInfo() {
-      return info || {};
-    },
-    avatarUrl() {
-      const {
-        avatar: { url }
-      } = info;
-      return url;
+  data() {
+    return {
+      info: {
+        fullname: "Robson Braga de Queiroz",
+        profession: "FullStack Developer",
+        avatar: {
+          url: "",
+          alt: "Personal Image"
+        },
+        company: {
+          name: "Way2 Technology",
+          role: "FrontEnd Developer"
+        },
+        summary: "<p>Javascript lover and enthusiast open-source.</p><p>I am a web developer since 2012. Working as a fullstack, however, with focus in the frontend of aplications. My professional goals are: be a excellence programmer, working in team, always trying improve my code and seeking new learning.</p>"
+      }
     }
-  }
+  },
 };
 </script>
 
