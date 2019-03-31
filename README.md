@@ -1,4 +1,6 @@
-# portifolio
+# Vue Portifolio - Personal Website Template
+
+This a simple ```Vuejs``` template for make a developer's portifolio.
 
 ## Project setup
 ```
