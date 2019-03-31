@@ -32,10 +32,22 @@
 
                   <template v-if="project.links.github || project.links.demo">
                     <div class="project-card__links">
-                      <a class="link link-tooltip" href="#0" target="_blank" rel="external" title="Project Repository">
+                      <a
+                        class="link link-tooltip"
+                        href="#0"
+                        target="_blank"
+                        rel="external"
+                        title="Project Repository"
+                      >
                         <ion-icon name="logo-github"></ion-icon>
                       </a>
-                      <a class="link link-tooltip" href="#0" target="_blank" rel="external" title="Project Demo">
+                      <a
+                        class="link link-tooltip"
+                        href="#0"
+                        target="_blank"
+                        rel="external"
+                        title="Project Demo"
+                      >
                         <ion-icon name="link"></ion-icon>
                       </a>
                     </div>
@@ -114,6 +126,8 @@ export default {
         position: absolute;
         top: 50%;
         left: 50%;
+        height: 100%;
+        width: 100%;
         transform: translate(-50%, -50%);
       }
     }
