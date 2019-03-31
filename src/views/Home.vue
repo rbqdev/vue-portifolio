@@ -4,14 +4,15 @@
       <template v-slot:header>
         <div class="card-header__container">
           <div class="avatar flex">
-            <img src="../assets/img/avatar.jpg" class="image shadow" alt="Avatar">
+            <img class="image shadow" v-if="!avatarUrl" src="@/assets/img/avatar.jpg" alt="Personal Image">
+            <img class="image shadow" v-else :src="avatarUrl" alt="Personal Image">
           </div>
         </div>
       </template>
       <template v-slot:content>
         <article class="card-content__info personal-info">
-          <h1 class="title name">Robson Braga de Queiroz</h1>
-          <h2 class="subtitle city text-light">FullStack Developer</h2>
+          <h1 class="title name">{{ homeInfo.fullname }}</h1>
+          <h2 class="subtitle city text-light">{{ homeInfo.profession }}</h2>
         </article>
         <article class="card-content__info professional-info">
           <h3 class="work">
@@ -21,15 +22,14 @@
               class="company"
               target="_blank"
               rel="noopener"
-            >Way2 Technology</a>
-            as Front End eveloper.
+            >{{ homeInfo.company.name }}</a>
+            as {{ homeInfo.company.role }}.
           </h3>
-          <span>Javascript lover and enthusiast open-source.</span>
         </article>
       </template>
       <template v-slot:footer>
         <article class="card-footer__content">
-          <p>I am a web developer since 2012. Working as a fullstack, however, with focus in the frontend of aplications. My professional goals are: be a programmer of excellence, maintaining the quality of code, team working, and always seeking new learning.</p>
+          <div class="card-footer__summary" v-html="homeInfo.summary"></div>
           <router-link to="/portifolio" class="btn btn-default">Portifólio</router-link>
         </article>
       </template>
@@ -38,12 +38,28 @@
 </template>
 
 <script>
+import { config } from "@config/config";
 import CardContent from "@/layouts/CardContent.vue";
+
+const {
+  homepage: { info }
+} = config;
 
 export default {
   name: "home",
   components: {
     CardContent
+  },
+  computed: {
+    homeInfo() {
+      return info || {};
+    },
+    avatarUrl() {
+      const {
+        avatar: { url }
+      } = info;
+      return url;
+    }
   }
 };
 </script>
@@ -73,10 +89,6 @@ export default {
     .subtitle {
       font-size: 1.2em;
     }
-
-    .work {
-      margin-bottom: 10px;
-    }
   }
 
   .card-header__container {
@@ -96,7 +108,6 @@ export default {
   }
 
   .card-footer__content {
-    margin-top: 15px;
     padding: 35px 25px;
     text-align: center;
     border-top: 1px solid #eee;

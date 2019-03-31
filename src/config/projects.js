@@ -3,8 +3,12 @@ const projects = [
     id: 1,
     title: "Project Title",
     image: {
-      url: "URL_HERE",
+      url: "",
       alt: "",
+    },
+    links: {
+      github: "#0",
+      demo: "#0",
     },
     tags: [
       "Javascript",
@@ -19,8 +23,12 @@ const projects = [
     id: 2,
     title: "Project Title",
     image: {
-      url: "URL_HERE",
+      url: "",
       alt: "",
+    },
+    links: {
+      github: "#0",
+      demo: "#0",
     },
     tags: [
       "Javascript",
@@ -35,8 +43,12 @@ const projects = [
     id: 3,
     title: "Project Title",
     image: {
-      url: "URL_HERE",
+      url: "",
       alt: "",
+    },
+    links: {
+      github: "#0",
+      demo: "#0",
     },
     tags: [
       "Javascript",
@@ -51,8 +63,12 @@ const projects = [
     id: 4,
     title: "Project Title",
     image: {
-      url: "URL_HERE",
+      url: "",
       alt: "",
+    },
+    links: {
+      github: "#0",
+      demo: "#0",
     },
     tags: [
       "Javascript",
@@ -67,8 +83,12 @@ const projects = [
     id: 5,
     title: "Project Title",
     image: {
-      url: "URL_HERE",
+      url: "",
       alt: "",
+    },
+    links: {
+      github: "#0",
+      demo: "#0",
     },
     tags: [
       "Javascript",
@@ -83,8 +103,12 @@ const projects = [
     id: 6,
     title: "Project Title",
     image: {
-      url: "URL_HERE",
+      url: "",
       alt: "",
+    },
+    links: {
+      github: "#0",
+      demo: "#0",
     },
     tags: [
       "Javascript",
@@ -99,8 +123,12 @@ const projects = [
     id: 7,
     title: "Project Title",
     image: {
-      url: "URL_HERE",
+      url: "",
       alt: "",
+    },
+    links: {
+      github: "#0",
+      demo: "#0",
     },
     tags: [
       "Javascript",
@@ -115,8 +143,12 @@ const projects = [
     id: 8,
     title: "Project Title",
     image: {
-      url: "URL_HERE",
+      url: "",
       alt: "",
+    },
+    links: {
+      github: "#0",
+      demo: "#0",
     },
     tags: [
       "Javascript",
@@ -131,8 +163,12 @@ const projects = [
     id: 9,
     title: "Project Title",
     image: {
-      url: "URL_HERE",
+      url: "",
       alt: "",
+    },
+    links: {
+      github: "#0",
+      demo: "#0",
     },
     tags: [
       "Javascript",
@@ -147,8 +183,12 @@ const projects = [
     id: 10,
     title: "Project Title",
     image: {
-      url: "URL_HERE",
+      url: "",
       alt: "",
+    },
+    links: {
+      github: "#0",
+      demo: "#0",
     },
     tags: [
       "Javascript",
@@ -163,8 +203,12 @@ const projects = [
     id: 11,
     title: "Project Title",
     image: {
-      url: "URL_HERE",
+      url: "",
       alt: "",
+    },
+    links: {
+      github: "#0",
+      demo: "#0",
     },
     tags: [
       "Javascript",
@@ -179,8 +223,12 @@ const projects = [
     id: 12,
     title: "Project Title",
     image: {
-      url: "URL_HERE",
+      url: "",
       alt: "",
+    },
+    links: {
+      github: "#0",
+      demo: "#0",
     },
     tags: [
       "Javascript",

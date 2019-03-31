@@ -54,11 +54,9 @@ export default {
   computed: {
     headerRightLinks() {
       const {
-        info: {
-          header: { links }
-        }
+        header: { links }
       } = config;
-      return links;
+      return links || [];
     }
   },
   methods: {

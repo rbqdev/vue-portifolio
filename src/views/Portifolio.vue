@@ -29,6 +29,17 @@
                   <div class="project-card__text-desc">
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptates mollitia qui natus culpa reprehenderit. Iusto quos inventore, praesentium ad deleniti nulla earum quasi, illum, illo omnis rem eos facilis.</p>
                   </div>
+
+                  <template v-if="project.links.github || project.links.demo">
+                    <div class="project-card__links">
+                      <a class="link link-tooltip" href="#0" target="_blank" rel="external" title="Project Repository">
+                        <ion-icon name="logo-github"></ion-icon>
+                      </a>
+                      <a class="link link-tooltip" href="#0" target="_blank" rel="external" title="Project Demo">
+                        <ion-icon name="link"></ion-icon>
+                      </a>
+                    </div>
+                  </template>
                 </div>
               </article>
             </template>
@@ -78,7 +89,7 @@ export default {
   .project-card {
     flex: 1 0 250px;
     min-height: 250px;
-    margin: 1%;
+    margin: 7px 1%;
     background: #fff;
     border-radius: 3px;
     overflow: hidden;
@@ -94,7 +105,7 @@ export default {
 
     &__image {
       position: relative;
-      padding-top: 45%;
+      padding-top: 50%;
       box-sizing: border-box;
       -webkit-box-sizing: border-box;
       overflow: hidden;
@@ -133,7 +144,7 @@ export default {
     }
 
     &__title {
-      font-size: 1.4em;
+      font-size: 1.3em;
       font-weight: bold;
     }
 
@@ -149,6 +160,23 @@ export default {
         display: -webkit-box;
         -webkit-line-clamp: 5;
         -webkit-box-orient: vertical;
+      }
+    }
+
+    &__links {
+      display: flex;
+      align-items: center;
+      padding: 10px 5px;
+      border-top: 1px solid #eee;
+
+      .link {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 2%;
+        line-height: 1;
+        font-size: 1.2em;
       }
     }
   }
