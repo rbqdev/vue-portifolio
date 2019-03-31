@@ -36,7 +36,7 @@ const config = {
         name: "Way2 Technology",
         role: "FrontEnd Developer"
       },
-      summary: "<p>Javascript lover and enthusiast open-source.</p><p>I am a web developer since 2012. Working as a fullstack, however, with focus in the frontend of aplications. My professional goals are: be a programmer of excellence, maintaining the quality of code, team working, and always seeking new learning.</p>"
+      summary: "<p>Javascript lover and enthusiast open-source.</p><p>I am a web developer since 2012. Working as a fullstack, however, with focus in the frontend of aplications. My professional goals are: be a excellence programmer, working in team, always trying improve my code and seeking new learning.</p>"
     }
   }
 }
