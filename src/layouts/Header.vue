@@ -48,31 +48,18 @@ export default {
   data() {
     return {
       isNavbarVisible: false,
-      navBarHiding: false,
-      headerRightLinks: [
-        {
-          label: "Github",
-          link: "https://github.com/rbqdev",
-          icon: "logo-github",
-        },
-        {
-          label: "Linkedin",
-          link: "https://www.linkedin.com/in/robson-braga-de-queiroz-51638714b/",
-          icon: "logo-linkedin",
-        },
-        {
-          label: "Twitter",
-          link: "https://twitter.com/rbqdev",
-          icon: "logo-twitter",
-        },
-        {
-          label: "Email",
-          link: "mailTo:rbq.dev@gmail.com",
-          icon: "mail",
-          isEmail: true
-        },
-      ]
+      navBarHiding: false
     };
+  },
+  computed: {
+    headerRightLinks() {
+      const {
+        info: {
+          header: { links }
+        }
+      } = config;
+      return links;
+    }
   },
   methods: {
     toggleNavbar() {
