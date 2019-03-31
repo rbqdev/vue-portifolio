@@ -1,41 +1,29 @@
 # Vue Portifolio - Personal Website Template
 
-This a simple ```Vuejs``` template for make a developer's portifolio.
+This a simple ```VueJS``` template for make a developer's portifolio.
 
-## Project setup
 ```
+# Project setup
 npm install
-```
 
-### Compiles and hot-reloads for development
-```
+# Compiles and hot-reloads for development
 npm run serve
-```
 
 ### Compiles and minifies for production
-```
 npm run build
-```
+
 
 ### Run your tests
-```
 npm run test
-```
 
 ### Lints and fixes files
-```
 npm run lint
-```
-
-### Run your end-to-end tests
-```
-npm run test:e2e
-```
 
 ### Run your unit tests
-```
 npm run test:unit
 ```
 
+```
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+```
