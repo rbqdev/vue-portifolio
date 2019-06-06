@@ -7,7 +7,12 @@
             <template v-for="(project, index) in projects">
               <article class="project-card" :key="index">
                 <figure class="project-card__image">
-                  <img src="@assets/img/line-bg.png" alt="Imagem do Projeto">
+                  <img
+                    v-if="!project.image.url"
+                    src="@assets/img/line-bg.png"
+                    alt="Imagem do Projeto"
+                  >
+                  <img v-else :src="project.image.url" alt="Imagem do Projeto">
                 </figure>
 
                 <div class="project-card__content">
@@ -15,26 +20,25 @@
                     <template v-for="(tag, indexTag) in project.tags">
                       <li class="tag" v-if="indexTag < 3" :key="indexTag">
                         <span class="tag-text">{{ tag }}</span>
-                        <template v-if="indexTag < 2">
-                          <span class="tag-divider">|</span>
-                        </template>
+                        <span class="tag-divider">|</span>
                       </li>
                     </template>
                   </ul>
 
                   <div class="project-card__text-primary">
-                    <h1 class="project-card__title">Project Title</h1>
+                    <h1 class="project-card__title">{{ project.title }}</h1>
                   </div>
 
                   <div class="project-card__text-desc">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptates mollitia qui natus culpa reprehenderit. Iusto quos inventore, praesentium ad deleniti nulla earum quasi, illum, illo omnis rem eos facilis.</p>
+                    <p>{{ project.description }}</p>
                   </div>
 
                   <template v-if="project.links.github || project.links.demo">
                     <div class="project-card__links">
                       <a
+                        v-if="project.links.github"
+                        :href="project.links.github"
                         class="link link-tooltip"
-                        href="#0"
                         target="_blank"
                         rel="external"
                         title="Project Repository"
@@ -42,8 +46,9 @@
                         <ion-icon name="logo-github"></ion-icon>
                       </a>
                       <a
+                        v-if="project.links.demo"
+                        :href="project.links.demo"
                         class="link link-tooltip"
-                        href="#0"
                         target="_blank"
                         rel="external"
                         title="Project Demo"
@@ -94,14 +99,14 @@ export default {
   }
 
   &__projects {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 
   .project-card {
-    flex: 1 0 250px;
+    width: 100%;
     min-height: 250px;
-    margin: 7px 1%;
     background: #fff;
     border-radius: 3px;
     overflow: hidden;
@@ -143,11 +148,17 @@ export default {
         align-items: center;
 
         &-text {
-          font-size: 9px;
+          font-size: 12px;
           font-weight: bold;
           text-transform: uppercase;
           letter-spacing: 1px;
           padding: 8px 10px;
+        }
+
+        &:last-child {
+          .tag-divider {
+            display: none;
+          }
         }
       }
     }
@@ -158,12 +169,13 @@ export default {
     }
 
     &__title {
-      font-size: 1.3em;
+      font-size: 1.5em;
       font-weight: bold;
     }
 
     &__text-desc {
       padding: 10px;
+      flex-grow: 1;
 
       p {
         color: #525f7f;

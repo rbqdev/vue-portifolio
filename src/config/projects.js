@@ -1,243 +1,49 @@
 const projects = [
   {
-    id: 1,
-    title: "Project Title",
+    title: "Vue - Portifólio (This)",
+    description: "Website/Portifólio pessoal feito em Vuejs",
     image: {
       url: "",
-      alt: "",
     },
     links: {
-      github: "#0",
-      demo: "#0",
+      github: "https://github.com/rbqdev/vue-portifolio",
+      demo: "https://rbqdev.netlify.com/",
     },
     tags: [
-      "Javascript",
-      "Vue",
-      "Vuex",
-      "Router",
-      "Node"
-    ],
-    description: "<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptates mollitia qui natus culpa reprehenderit. Iusto quos inventore, praesentium ad deleniti nulla earum quasi, illum, illo omnis rem eos facilis.</p>"
+      "Vue"
+    ]
   },
   {
-    id: 2,
-    title: "Project Title",
+    title: "Associação Webapp",
+    description: "Webapp feito para gestão de uma associação de transporte de alunos do ensino superior.",
     image: {
       url: "",
       alt: "",
     },
     links: {
-      github: "#0",
-      demo: "#0",
+      github: "https://github.com/rbqdev/associacao-webapp",
+      demo: null,
     },
     tags: [
-      "Javascript",
-      "Vue",
-      "Vuex",
-      "Router",
-      "Node"
-    ],
-    description: "<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptates mollitia qui natus culpa reprehenderit. Iusto quos inventore, praesentium ad deleniti nulla earum quasi, illum, illo omnis rem eos facilis.</p>"
+      "Typescript",
+      "Angular2",
+      "Ionic2"
+    ]
   },
   {
-    id: 3,
-    title: "Project Title",
+    title: "React - Todo app",
+    description: "App experimental feito em ReactJs + GrapqhQL",
     image: {
-      url: "",
-      alt: "",
+      url: "https://i.imgur.com/rkc4H9X.png"
     },
     links: {
-      github: "#0",
-      demo: "#0",
+      github: "https://github.com/rbqdev/react-todo",
+      demo: "https://rbqdev.github.io/",
     },
     tags: [
-      "Javascript",
-      "Vue",
-      "Vuex",
-      "Router",
-      "Node"
-    ],
-    description: "<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptates mollitia qui natus culpa reprehenderit. Iusto quos inventore, praesentium ad deleniti nulla earum quasi, illum, illo omnis rem eos facilis.</p>"
-  },
-  {
-    id: 4,
-    title: "Project Title",
-    image: {
-      url: "",
-      alt: "",
-    },
-    links: {
-      github: "#0",
-      demo: "#0",
-    },
-    tags: [
-      "Javascript",
-      "Vue",
-      "Vuex",
-      "Router",
-      "Node"
-    ],
-    description: "<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptates mollitia qui natus culpa reprehenderit. Iusto quos inventore, praesentium ad deleniti nulla earum quasi, illum, illo omnis rem eos facilis.</p>"
-  },
-  {
-    id: 5,
-    title: "Project Title",
-    image: {
-      url: "",
-      alt: "",
-    },
-    links: {
-      github: "#0",
-      demo: "#0",
-    },
-    tags: [
-      "Javascript",
-      "Vue",
-      "Vuex",
-      "Router",
-      "Node"
-    ],
-    description: "<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptates mollitia qui natus culpa reprehenderit. Iusto quos inventore, praesentium ad deleniti nulla earum quasi, illum, illo omnis rem eos facilis.</p>"
-  },
-  {
-    id: 6,
-    title: "Project Title",
-    image: {
-      url: "",
-      alt: "",
-    },
-    links: {
-      github: "#0",
-      demo: "#0",
-    },
-    tags: [
-      "Javascript",
-      "Vue",
-      "Vuex",
-      "Router",
-      "Node"
-    ],
-    description: "<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptates mollitia qui natus culpa reprehenderit. Iusto quos inventore, praesentium ad deleniti nulla earum quasi, illum, illo omnis rem eos facilis.</p>"
-  },
-  {
-    id: 7,
-    title: "Project Title",
-    image: {
-      url: "",
-      alt: "",
-    },
-    links: {
-      github: "#0",
-      demo: "#0",
-    },
-    tags: [
-      "Javascript",
-      "Vue",
-      "Vuex",
-      "Router",
-      "Node"
-    ],
-    description: "<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptates mollitia qui natus culpa reprehenderit. Iusto quos inventore, praesentium ad deleniti nulla earum quasi, illum, illo omnis rem eos facilis.</p>"
-  },
-  {
-    id: 8,
-    title: "Project Title",
-    image: {
-      url: "",
-      alt: "",
-    },
-    links: {
-      github: "#0",
-      demo: "#0",
-    },
-    tags: [
-      "Javascript",
-      "Vue",
-      "Vuex",
-      "Router",
-      "Node"
-    ],
-    description: "<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptates mollitia qui natus culpa reprehenderit. Iusto quos inventore, praesentium ad deleniti nulla earum quasi, illum, illo omnis rem eos facilis.</p>"
-  },
-  {
-    id: 9,
-    title: "Project Title",
-    image: {
-      url: "",
-      alt: "",
-    },
-    links: {
-      github: "#0",
-      demo: "#0",
-    },
-    tags: [
-      "Javascript",
-      "Vue",
-      "Vuex",
-      "Router",
-      "Node"
-    ],
-    description: "<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptates mollitia qui natus culpa reprehenderit. Iusto quos inventore, praesentium ad deleniti nulla earum quasi, illum, illo omnis rem eos facilis.</p>"
-  },
-  {
-    id: 10,
-    title: "Project Title",
-    image: {
-      url: "",
-      alt: "",
-    },
-    links: {
-      github: "#0",
-      demo: "#0",
-    },
-    tags: [
-      "Javascript",
-      "Vue",
-      "Vuex",
-      "Router",
-      "Node"
-    ],
-    description: "<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptates mollitia qui natus culpa reprehenderit. Iusto quos inventore, praesentium ad deleniti nulla earum quasi, illum, illo omnis rem eos facilis.</p>"
-  },
-  {
-    id: 11,
-    title: "Project Title",
-    image: {
-      url: "",
-      alt: "",
-    },
-    links: {
-      github: "#0",
-      demo: "#0",
-    },
-    tags: [
-      "Javascript",
-      "Vue",
-      "Vuex",
-      "Router",
-      "Node"
-    ],
-    description: "<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptates mollitia qui natus culpa reprehenderit. Iusto quos inventore, praesentium ad deleniti nulla earum quasi, illum, illo omnis rem eos facilis.</p>"
-  },
-  {
-    id: 12,
-    title: "Project Title",
-    image: {
-      url: "",
-      alt: "",
-    },
-    links: {
-      github: "#0",
-      demo: "#0",
-    },
-    tags: [
-      "Javascript",
-      "Vue",
-      "Vuex",
-      "Router",
-      "Node"
-    ],
-    description: "<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptates mollitia qui natus culpa reprehenderit. Iusto quos inventore, praesentium ad deleniti nulla earum quasi, illum, illo omnis rem eos facilis.</p>"
+      "React",
+      "GrapqhQL"
+    ]
   },
 ];
 
