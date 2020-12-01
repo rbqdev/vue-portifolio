@@ -4,14 +4,14 @@
       <template v-slot:header>
         <div class="card-header__container">
           <div class="avatar flex">
-            <img class="image shadow" src="@/assets/img/avatar.jpg" alt="Personal Image">
+            <img class="image shadow" src="https://media-exp1.licdn.com/dms/image/C4E03AQGsrqqn9Sud9w/profile-displayphoto-shrink_200_200/0?e=1612396800&v=beta&t=XJSnQhI05DJv2DHz3OoOWZi4vJmoLuU7Ij04O3fhbCY" alt="Personal Image">
           </div>
         </div>
       </template>
       <template v-slot:content>
         <article class="card-content__info personal-info">
           <h1 class="title name">Robson Braga de Queiroz</h1>
-          <h2 class="subtitle city text-light">FullStack Developer</h2>
+          <h2 class="subtitle city text-light">Frontend Developer</h2>
         </article>
         <article class="card-content__info professional-info">
           <h3 class="work">
@@ -30,7 +30,7 @@
         <article class="card-footer__content">
           <div class="card-footer__summary">
             <p>Javascript lover and enthusiast open-source.</p>
-            <p>I am a web developer since 2012. Working as a fullstack, however, with focus in the frontend of aplications. My professional goals are: be a excellence programmer, working in team, always trying improve my code and seeking new learning.</p>
+            <p>I am a Frontend Developer since 2012. My professional goals are: be a excellence programmer, working in team, always trying improve my code and seeking new learning.</p>
           </div>
           <router-link to="/portifolio" class="btn btn-default">Portifólio</router-link>
         </article>
