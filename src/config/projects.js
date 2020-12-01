@@ -52,7 +52,7 @@ const projects = [
       url: ""
     },
     links: {
-      github: "https://github.com/rbqdev/way2-biblioteca",
+      github: "https://github.com/rbqdev/way2-biblioteca/tree/new-site-layout",
       demo: "https://w2lib.azurewebsites.net/"
     },
     tags: [
