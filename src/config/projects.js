@@ -45,6 +45,21 @@ const projects = [
       "GrapqhQL"
     ]
   },
+  {
+    title: "[Contribuição] Way2Library",
+    description: "Redesign do site da Way2Library",
+    image: {
+      url: ""
+    },
+    links: {
+      github: "https://github.com/rbqdev/way2-biblioteca",
+      demo: "https://w2lib.azurewebsites.net/"
+    },
+    tags: [
+      "Vue",
+      "TypeScript"
+    ]
+  }
 ];
 
 export { projects };
