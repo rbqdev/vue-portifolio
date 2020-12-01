@@ -7,12 +7,12 @@
     <div class="nav-container container flex flex-justify-between">
       <ul class="nav-links nav-links-left flex">
         <li class="nav-link nav-link-home">
-          <router-link to="/" aria-label="'</>'">Robson Braga</router-link>
+          <router-link to="/">Robson Braga</router-link>
         </li>
       </ul>
       <!-- Links -->
       <button type="button" class="navbar-toggle" @click="toggleNavbar()">
-        <span class="line"></span>
+        <span class="line" />
       </button>
       <ul class="nav-links nav-links-right flex">
         <ul class="nav-links-pages">
@@ -29,13 +29,13 @@
                 :target="!item.email ? '_blank' : ''"
                 rel="noopener"
               >
-                <ion-icon :name="item.icon"></ion-icon>
+                <ion-icon :name="item.icon" />
               </a>
             </li>
           </template>
         </ul>
       </ul>
-      <div class="navbar-mobile-overlay" @click="toggleNavbar()"></div>
+      <div class="navbar-mobile-overlay" @click="toggleNavbar()" />
       <!-- Links -->
     </div>
   </div>
