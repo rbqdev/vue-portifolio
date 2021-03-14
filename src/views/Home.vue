@@ -4,7 +4,7 @@
       <template v-slot:header>
         <div class="card-header__container">
           <div class="avatar flex">
-            <img class="image shadow" src="https://media-exp1.licdn.com/dms/image/C4E03AQGsrqqn9Sud9w/profile-displayphoto-shrink_200_200/0?e=1612396800&v=beta&t=XJSnQhI05DJv2DHz3OoOWZi4vJmoLuU7Ij04O3fhbCY" alt="Personal Image">
+            <img class="image shadow" src="https://avatars.githubusercontent.com/u/32659372?s=400&u=f6266e9956cb288f7d4076c5d2edb5ee88046e4d&v=4" alt="Personal Image">
           </div>
         </div>
       </template>
