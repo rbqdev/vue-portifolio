@@ -17,11 +17,11 @@
           <h3 class="work">
             Working on
             <a
-              href="http://way2.com.br"
+              href="http://hash.com.br"
               class="company"
               target="_blank"
               rel="noopener"
-            >Way2 Tecnologia</a>
+            >Hash</a>
             as FrontEnd Developer.
           </h3>
         </article>
