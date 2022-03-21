@@ -15,7 +15,7 @@
         </article>
         <article class="card-content__info professional-info">
           <h3 class="work">
-            Working on
+            Working at
             <a
               href="http://hash.com.br"
               class="company"
