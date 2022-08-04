@@ -29,8 +29,7 @@
       <template v-slot:footer>
         <article class="card-footer__content">
           <div class="card-footer__summary">
-            <p>Javascript lover and enthusiast open-source.</p>
-            <p>I am a Frontend Developer since 2012. My professional goals are: be a excellence programmer, working in team, always trying improve my code and seeking new learning.</p>
+            <p>I've been a Software Developer since 2012 but from 2015 onwards I started to focus more on front-end development until now working with a lot of Javascript based technologies.</p>
           </div>
           <router-link to="/portifolio" class="btn btn-default">Portifólio</router-link>
         </article>
