@@ -11,25 +11,13 @@
       <template v-slot:content>
         <article class="card-content__info personal-info">
           <h1 class="title name">Robson Braga de Queiroz</h1>
-          <h2 class="subtitle city text-light">Frontend Developer</h2>
-        </article>
-        <article class="card-content__info professional-info">
-          <h3 class="work">
-            Working at
-            <a
-              href="http://hash.com.br"
-              class="company"
-              target="_blank"
-              rel="noopener"
-            >Hash</a>
-            as FrontEnd Developer.
-          </h3>
+          <h2 class="subtitle city text-light">Senior FrontEnd Engineer</h2>
         </article>
       </template>
       <template v-slot:footer>
         <article class="card-footer__content">
           <div class="card-footer__summary">
-            <p>I've been a Software Developer since 2012 but from 2015 onwards I started to focus more on front-end development until now working with a lot of Javascript based technologies.</p>
+            <p>Experienced Software Developer with a career spanning over a decade, specializing in front-end development. Adept at collaborating with cross-functional teams, contributing to product discussions, and making impactful decisions. Extensive expertise in JavaScript-based technologies, with a focus on React.js, Vue.js, and other modern frameworks. Proven track record in feature development, bug maintenance, and code reviews.</p>
           </div>
           <router-link to="/portifolio" class="btn btn-default">Portifólio</router-link>
         </article>
